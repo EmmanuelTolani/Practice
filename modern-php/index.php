@@ -1,6 +1,11 @@
+//// Learnt how to declare variables
 <?php 
+    $car;
     $name= "Joe";
+    $car = "Benz";
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,5 +19,8 @@
     <h1>
         <?php echo $name ?>
     </h1>
+    <h2>
+        <?php echo $car ?>
+    </h2>
 </body>
 </html>
