@@ -3,6 +3,7 @@
     $car;
     $name= "Joe";
     $car = "Benz";
+    const STORE = "Macy's"
 ?>
 
 
@@ -22,5 +23,8 @@
     <h2>
         <?php echo $car ?>
     </h2>
+    <h3>
+        <?php echo STORE ?>
+    </h3>
 </body>
 </html>
