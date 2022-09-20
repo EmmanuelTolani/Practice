@@ -1,9 +1,5 @@
 <?php 
-    $car;
     $name= "Joe";
-    $car = "Benz";
-    // const STORE = "Macy's";
-    define('Radio','Hot 97');
     
 ?>
 
