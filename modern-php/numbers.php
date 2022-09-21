@@ -1,8 +1,7 @@
 <?php 
-    $name= strtoupper("Emmanuel");
-    $sentence = strtoupper("Hi my name is ");
-?>
+ echo $_SERVER['REQUEST_METHOD'];
 
+    ?>
 
 
 <!DOCTYPE html>
@@ -15,7 +14,7 @@
 </head>
 <body>
     <h1>
-        <?php echo "Hi you owe me money {$name}" ?>
+       <?php ?>
     </h1>
 </body>
 </html>
