@@ -1,32 +1,15 @@
 <?php 
-class Car {
-    public $doors = 4;
-    public function __construct($name,$doors,$color){
-        $this->doors = $doors;
-        $this->name = $name;
-        $this->color = $color;
-    }
-
-    public function printName(){
-        echo $this->name;
-    }
-
-    public function statement(){
-        echo "<h1>This car is a {$this->color} {$this->name} and has {$this->doors} doors</h1>";
-    }
-}
-
-$honda = new Car("Civic",4,"red");
-$GreenHonda = new Car("Civic", 2, "green");
-$Bmw = new Car("M6",4 , "Space Grey");
-
-$honda->statement();
-$Bmw->statement();
-
-echo"<pre>". var_dump($honda) . "</pre>";
-
+require("classes/Car.php");
+require("classes/Honda.php");
+require("classes/Bmw.php");
+$car1 = new Honda("Civic", 2, "Green" , "25,000");
 // var_dump($honda);
-
+$car1->price();
+$car1->statement();
+$car2 = new Bmw("M3", 4, "Space Grey", "80,000");
+$car2->price();
+$car2->statement();
+$car2->sportsPackage(false)
 ?>
 
 
