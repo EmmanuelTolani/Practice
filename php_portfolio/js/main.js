@@ -54,14 +54,13 @@
       $hdr = $(".s-header"),
       triggerHeight = $hero.outerHeight() - 170;
 
+    let loc = $WIN.scrollTop();
     $WIN.on("scroll", function () {
       if (
         document
           .getElementsByTagName("body")[0]
           .classList.contains("home__page")
       ) {
-        let loc = $WIN.scrollTop();
-
         if (loc > triggerHeight) {
           $hdr.addClass("sticky");
         } else {
@@ -249,27 +248,25 @@
   /* smooth scrolling
    * ------------------------------------------------------ */
   const ssSmoothScroll = function () {
-    $(".smoothscroll").on("click", function (e) {
-      const target = this.hash;
-      const $target = $(target);
-
-      e.preventDefault();
-      e.stopPropagation();
-
-      $("html, body")
-        .stop()
-        .animate(
-          {
-            scrollTop: $target.offset().top,
-          },
-          cfg.scrollDuration,
-          "swing"
-        )
-        .promise()
-        .done(function () {
-          window.location.hash = target;
-        });
-    });
+    // $(".smoothscroll").on("click", function (e) {
+    //   const target = this.hash;
+    //   const $target = $(target);
+    //   e.preventDefault();
+    //   e.stopPropagation();
+    //   $("html, body")
+    //     .stop()
+    //     .animate(
+    //       {
+    //         scrollTop: $target.offset().top,
+    //       },
+    //       cfg.scrollDuration,
+    //       "swing"
+    //     )
+    //     .promise()
+    //     .done(function () {
+    //       window.location.hash = target;
+    //     });
+    // });
   };
 
   /* back to top

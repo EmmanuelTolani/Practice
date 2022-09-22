@@ -9,18 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <?php require("includes/head.php"); ?>
+    <?php require("../includes/head.php"); ?>
 </head>
 
 <body id="top">
       <!-- preloader
     ================================================== -->
 
-   <?php require("includes/preloader.php"); ?>
+   <?php require("../includes/preloader.php"); ?>
 
     <!-- header
     ================================================== -->
-     <?php require("includes/header.php"); ?>
+     <?php require("../includes/header.php"); ?>
 
 
     <!-- about
@@ -40,8 +40,8 @@
                     </div>
 
                     <div class="profile-pic" data-aos="fade-up">
-                        <img src="images/profile-pic.jpg" 
-                             srcset="images/profile-pic.jpg 1x, images/profile-pic@2x.jpg 2x" alt="">
+                        <img src="/images/profile-pic.jpg" 
+                             srcset="/images/profile-pic.jpg 1x, /images/profile-pic@2x.jpg 2x" alt="">
                     </div>
 
                     <h3 data-aos="fade-up">Profile</h3>
@@ -196,6 +196,6 @@
 
     <!-- Java Script
     ================================================== -->
-  <?php require('includes/scripts.php'); ?>
+  <?php require('../includes/scripts.php'); ?>
 
 </body>
